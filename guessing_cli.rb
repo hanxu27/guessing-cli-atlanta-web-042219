@@ -9,6 +9,9 @@ def run_guessing_game
     if guess == number
       puts "You guess the correct number!"
       return
+    if guess == "exit"
+      puts "Goodbye!"
+      return
     end
   end
 end
