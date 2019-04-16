@@ -8,6 +8,7 @@ def run_guessing_game
     guess = gets.chomp!
     if guess == number
       puts "You guess the correct number!"
+      return
     end
   end
 end
