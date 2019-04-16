@@ -10,9 +10,9 @@ def run_guessing_game
         puts "Goodbye!"
         return
       elsif guess.to_i == computer_number
-          puts "You guessed the correct number!"
-        elsif guess.to_i != computer_number
-          puts "The computer guessed #{computer_number}."
-        end
+        puts "You guessed the correct number!"
+      elsif guess.to_i != computer_number
+        puts "The computer guessed #{computer_number}."
       end
-    end
+  end
+end
