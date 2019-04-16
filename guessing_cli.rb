@@ -2,17 +2,14 @@
 require "pry"
 
 def run_guessing_game
-  guess = ""
-  number = rand(1..6)
-  
-  while guess != "exit" do
+  loop do
     puts "Guess a number between 1 and 6."
     guess = gets.chomp
-    binding.pry
+    number = rand(1..6)
     if guess.to_i == number
       puts "You guess the correct number!"
       return
-    if guess == "exit"
+    elsif guess == "exit"
       puts "Goodbye!"
       return
     end
