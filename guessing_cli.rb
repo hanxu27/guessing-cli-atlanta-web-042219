@@ -11,7 +11,9 @@ def run_guessing_game
         puts "The computer guessed #{answer}."
       elsif guess.to_i == answer
         puts "You guessed the correct number!"
-
+      elsif guess == "exit"
+        puts "Goodbye!"
+        return
       end
   end
 end
