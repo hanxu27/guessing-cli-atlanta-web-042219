@@ -14,7 +14,6 @@ def run_guessing_game
       return
     elsif guess.to_i != number
       puts "The computer guessed #{number}"
-
     end
   end
 end
